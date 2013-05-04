@@ -96,7 +96,7 @@
 }
 .nav-tabs > li,
 .nav-pills > li {
-  float: left;
+  float: right;
 }
 .nav-tabs > li > a,
 .nav-pills > li > a {
@@ -351,7 +351,7 @@
 
 // Tabs on the left
 .tabs-left > .nav-tabs {
-  float: left;
+  float: right;
   margin-right: 19px;
   border-right: 1px solid #ddd;
 }
