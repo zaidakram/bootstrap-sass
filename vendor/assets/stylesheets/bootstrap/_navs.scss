@@ -289,7 +289,8 @@
   @include clearfix();
 }
 .tab-content {
-  overflow: auto; // prevent content from running below tabs
+  overflow: hidden; // prevent content from running below tabs
+  margin-top: 10px;
 }
 
 // Remove border on bottom, left, right
