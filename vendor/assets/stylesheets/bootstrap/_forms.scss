@@ -476,18 +476,6 @@ select:focus:invalid {
 }
 
 .input-prepend {
-  .add-on,
-  .btn {
-    margin-right: -1px;
-  }
-  .add-on:first-child,
-  .btn:first-child {
-    // FYI, `.btn:first-child` accounts for a button group that's prepended
-    @include border-radius($inputBorderRadius 0 0 $inputBorderRadius);
-  }
-}
-
-.input-append {
   input,
   select,
   .uneditable-input {
@@ -497,6 +485,18 @@ select:focus:invalid {
     }
   }
   .add-on,
+  .btn {
+    margin-right: -1px;
+  }
+  .add-on:first-child,
+  .btn:first-child {
+    // FYI, `.btn:first-child` accounts for a button group that's prepended
+    @include border-radius(0 $inputBorderRadius $inputBorderRadius 0);
+  }
+}
+
+.input-append {
+  .add-on,
   .btn,
   .btn-group {
     margin-left: -1px;
@@ -504,7 +504,7 @@ select:focus:invalid {
   .add-on:last-child,
   .btn:last-child,
   .btn-group:last-child > .dropdown-toggle {
-    @include border-radius(0 $inputBorderRadius $inputBorderRadius 0);
+    @include border-radius($inputBorderRadius 0 0 $inputBorderRadius);
   }
 }
 
@@ -521,12 +521,12 @@ select:focus:invalid {
   .add-on:first-child,
   .btn:first-child {
     margin-right: -1px;
-    @include border-radius($inputBorderRadius 0 0 $inputBorderRadius);
+    @include border-radius(0 $inputBorderRadius $inputBorderRadius 0);
   }
   .add-on:last-child,
   .btn:last-child {
     margin-left: -1px;
-    @include border-radius(0 $inputBorderRadius $inputBorderRadius 0);
+    @include border-radius($inputBorderRadius 0 0 $inputBorderRadius);
   }
   .btn-group:first-child {
     margin-left: 0;
