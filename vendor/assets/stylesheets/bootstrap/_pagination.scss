@@ -15,7 +15,7 @@
   margin-left: 0;
   margin-bottom: 0;
   // Visuals
-  @include border-radius($baseBorderRadius);
+  // @include border-radius($baseBorderRadius);
   @include box-shadow(0 1px 2px rgba(0,0,0,.05));
 }
 .pagination ul > li {
@@ -52,12 +52,12 @@
 }
 .pagination ul > li:first-child > a,
 .pagination ul > li:first-child > span {
-  @include border-right-radius($baseBorderRadius);
+  // @include border-right-radius($baseBorderRadius);
 }
 .pagination ul > li:last-child > a,
 .pagination ul > li:last-child > span {
   border-left-width: 1px;
-  @include border-left-radius($baseBorderRadius);
+  // @include border-left-radius($baseBorderRadius);
 }
 
 
@@ -84,11 +84,11 @@
   }
   ul > li:first-child > a,
   ul > li:first-child > span {
-    @include border-left-radius($borderRadiusLarge);
+    // @include border-left-radius($borderRadiusLarge);
   }
   ul > li:last-child > a,
   ul > li:last-child > span {
-    @include border-right-radius($borderRadiusLarge);
+    // @include border-right-radius($borderRadiusLarge);
   }
 }
 
@@ -97,11 +97,11 @@
 .pagination-small {
   ul > li:first-child > a,
   ul > li:first-child > span {
-    @include border-left-radius($borderRadiusSmall);
+    // @include border-left-radius($borderRadiusSmall);
   }
   ul > li:last-child > a,
   ul > li:last-child > span {
-    @include border-right-radius($borderRadiusSmall);
+    // @include border-right-radius($borderRadiusSmall);
   }
 }
 
